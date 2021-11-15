@@ -25,8 +25,11 @@ ActiveRecord::Schema.define(version: 2021_11_15_134234) do
   end
 
   create_table "bookings", force: :cascade do |t|
-    t.string "start_date"
-    t.string "end_start"
+    t.date "start_date"
+    t.date "end_date"
+    t.integer "total_price"
+    t.integer "status", default: 0
+    t.integer "guests"
     t.bigint "factory_id", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
@@ -62,4 +65,5 @@ ActiveRecord::Schema.define(version: 2021_11_15_134234) do
   add_foreign_key "beers", "factories"
   add_foreign_key "bookings", "factories"
   add_foreign_key "bookings", "users"
+  add_foreign_key "factories", "users"
 end
