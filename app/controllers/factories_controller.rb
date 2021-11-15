@@ -1,0 +1,2 @@
+class FactoriesController < ApplicationController
+end
