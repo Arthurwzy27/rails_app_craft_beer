@@ -1,3 +1,7 @@
+<div class="previous-button">
+  <%= link_to '←', factories_path %>
+</div>
+
 <div class="factory-show-layout">
   <br>
   <h2><%= @factory.name %></h2>
@@ -8,12 +12,15 @@
       <%= render 'shared/carrousel' %>
       </div>
 
-      <div class="col">
-        <h2 class="card-trip-pricing"><%= @factory.price_per_day %> €</h2>
-        <h2><%= @factory.capacity %> guests</h2>
+      <div class="price-guest-layout">
+        <div class="col">
+          <h2 class="card-trip-pricing"><%= @factory.price_per_day %> €</h2>
+          <h2><%= @factory.capacity %> guests</h2>
+        </div>
       </div>
     </div>
   </div>
+
   <br>
   <h2><%= @factory.description %></h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -25,7 +32,7 @@
   malesuada fringilla massa. Ut pulvinar, quam</p>
   <p><%= @factory.location %></p>
   <br>
-  <h2>Which can of beer do we offer ?</h2>
+  <h2>Which kind of beer do we offer ?</h2>
   <br>
 
   <%= render 'beers/beer-card' %>
