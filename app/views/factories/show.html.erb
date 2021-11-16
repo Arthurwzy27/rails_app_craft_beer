@@ -1,42 +1,38 @@
-<br>
-<h2><%= @factory.name %></h2>
-<br>
-<div class="container">
-  <div class="row">
-    <div class="col">
-    <%= render 'shared/carrousel' %>
-    </div>
+<div class="factory-show-layout">
+  <br>
+  <h2><%= @factory.name %></h2>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+      <%= render 'shared/carrousel' %>
+      </div>
 
-    <div class="col">
-      <h2 class="card-trip-pricing"><%= @factory.price_per_day %> €</h2>
-      <h2><%= @factory.capacity %> guests</h2>
+      <div class="col">
+        <h2 class="card-trip-pricing"><%= @factory.price_per_day %> €</h2>
+        <h2><%= @factory.capacity %> guests</h2>
+      </div>
     </div>
   </div>
-</div>
+  <br>
+  <h2><%= @factory.description %></h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  Donec gravida tincidunt euismod. Mauris lacus mi, vulputate eget sem
+  vitae, imperdiet consectetur urna. In ante sapien, mattis eu nisi ut,
+  malesuada fringilla massa. Ut pulvinar, quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  Donec gravida tincidunt euismod. Mauris lacus mi, vulputate eget sem
+  vitae, imperdiet consectetur urna. In ante sapien, mattis eu nisi ut,
+  malesuada fringilla massa. Ut pulvinar, quam</p>
+  <p><%= @factory.location %></p>
+  <br>
+  <h2>Which can of beer do we offer ?</h2>
+  <br>
 
+  <%= render 'beers/beer-card' %>
 
-
-
-
-
-<br>
-<h2><%= @factory.description %></h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Donec gravida tincidunt euismod. Mauris lacus mi, vulputate eget sem
-vitae, imperdiet consectetur urna. In ante sapien, mattis eu nisi ut,
-malesuada fringilla massa. Ut pulvinar, quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Donec gravida tincidunt euismod. Mauris lacus mi, vulputate eget sem
-vitae, imperdiet consectetur urna. In ante sapien, mattis eu nisi ut,
-malesuada fringilla massa. Ut pulvinar, quam</p>
-<p><%= @factory.location %></p>
-<br>
-<h2>Which can of beer do we offer ?</h2>
-<br>
-<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1603407737655-e8467cf1a7c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80)">
-  All beers here
-</div>
-<br>
-<h2>Where can you find us?</h2>
-<br>
-<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://miro.medium.com/max/1200/1*qYUvh-EtES8dtgKiBRiLsA.png)">
+  <br>
+  <h2>Where can you find us?</h2>
+  <br>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://miro.medium.com/max/1200/1*qYUvh-EtES8dtgKiBRiLsA.png)">
+  </div>
 </div>
