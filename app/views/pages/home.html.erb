@@ -6,15 +6,30 @@
   </head>
 
   <body>
-    <div class="container1">
-    <h1>*company name*</h1>
-    <p>Discover all new Craft Beer factories around you</p>
-    <input id="input" type="search" autocomplete="off" spellcheck="false" role="combobox" aria-live="polite" placeholder="I'm searching for...">
+    <div class="banner">
+    <div class="company_name">
+      <h1>*company name*</h1>
+      <p>Discover all new Craft Beer factories around you</p>
+      <input id="input" type="search" autocomplete="off" spellcheck="false" role="combobox" aria-live="polite" placeholder="I'm searching for...">
+      </div>
     </div>
 
-    <div class="container2">
-    <h4>TOP FACTORY</h4>
-    <p>here photos of places</p>
+    <h4>TOP FACTORIES:</h4>
+
+    <div class="factories_home">
+    <%= render 'shared/card' %>
+    <%= render 'shared/card' %>
+    <%= render 'shared/card' %>
+    <%= render 'shared/card' %>
+    <%# <img src="https://images.xceed.me/bars/gallery/olgod-craft-beer-bar-bar-barcelona-xceed-9e34-46e3.png">
+    <img src="https://lh3.googleusercontent.com/proxy/m2mIZswoePeaSK74ABrZtVuqWT3g2MBEpgangOEmn-9MAGnPeGFmkDKP8RYHj0Jm2eR59-J6tsCP56eEoNGzptI2ZvV6lcVGRQGtbeTxH99AGVJZQIs">%>
+    </div>
+
+    <div class="second_factories_home">
+    <%= render 'shared/card' %>
+    <%= render 'shared/card' %>
+    <%= render 'shared/card' %>
+    <%= render 'shared/card' %>
     </div>
   </body>
 
