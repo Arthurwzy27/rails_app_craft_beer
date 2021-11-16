@@ -1,1 +1,75 @@
 // Specific CSS for your home-page
+body {
+  color: rgb(182, 148, 97);
+  background-color: rgb(241, 232, 194);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  line-height: 10px
+}
+.company_name {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.banner::before{
+background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://c8.alamy.com/comp/2BP9N4K/a-variety-of-international-beer-bottle-caps-arranged-in-rows-on-a-wood-table-2BP9N4K.jpg);
+  opacity: 69%;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-size: 105%;
+  background-position-y: -334px;
+  background-position-x: -71px;
+}
+.banner {
+  padding: 100px 0;
+  position: relative;
+}
+.banner h1 {
+  margin: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+  font-weight: bold;
+  position: relative;
+}
+.banner p {
+  font-size: 20px;
+  color: white;
+  position: relative;
+}
+
+.factories_home {
+  text-align: left;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.second_factories_home {
+  text-align: left;
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-evenly;
+}
+h4{
+  text-align: left;
+  padding-top: 50px;
+  margin-left: 55px;
+}
+.container3 {
+  text-align: left;
+  padding-bottom: 30px;
+}
+#input {
+  border-radius: 80px;
+  position: relative;
+}
+.card{
+  width: 300px;
+  height: 250px;
+  background: url("https://images.xceed.me/bars/gallery/olgod-craft-beer-bar-bar-barcelona-xceed-9e34-46e3.png");
+  background-size: cover;
+  border-radius: 15px;
+}

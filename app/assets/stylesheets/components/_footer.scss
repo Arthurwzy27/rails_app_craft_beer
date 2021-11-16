@@ -1,10 +1,11 @@
 .footer {
-  background: #F4F4F4;
+  background-color: rgb(241, 232, 194);
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100px;
-  padding: 0px 50px;
+  padding: 40px;
+  padding-bottom: 5px;
   color: rgba(0,0,0,0.3);
 }
 .footer-links {
@@ -13,14 +14,19 @@
 }
 .footer-links a {
   color: black;
-  opacity: 0.15;
   text-decoration: none;
   font-size: 24px;
   padding: 0px 10px;
 }
-.footer-links a:hover {
-  opacity: 1;
+#instagram {
+  color: rgb(152, 58, 165);
 }
-.footer .fa-heart {
-  color: #D23333;
+#youtube {
+  color: rgb(201, 15, 15);
+}
+#facebook {
+  color: rgb(41, 65, 168);
+}
+#twitter {
+  color: rgb(15, 127, 201);
 }
