@@ -1,8 +1,8 @@
 .footer {
-  background-color: rgb(241, 232, 194);
+  background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
   height: 100px;
   padding: 40px;
   padding-bottom: 5px;
@@ -11,6 +11,8 @@
 .footer-links {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  padding-right: 45px;
 }
 .footer-links a {
   color: black;
