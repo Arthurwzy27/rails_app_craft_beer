@@ -4,7 +4,7 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: 'Times New Roman', Times, serif;
   font-size: 15px;
-  line-height: 10px
+  line-height: 35px
 }
 .company_name {
   text-align: center;
@@ -12,8 +12,8 @@ body {
 }
 
 .banner::before{
-background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://c8.alamy.com/comp/2BP9N4K/a-variety-of-international-beer-bottle-caps-arranged-in-rows-on-a-wood-table-2BP9N4K.jpg);
-  opacity: 69%;
+background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.wallpaperup.com/uploads/wallpapers/2017/11/18/1156498/2c77ba36821e3d62cb83cc6826af37bc-700.jpg);
+  // opacity: 100%;
   content: "";
   position: absolute;
   top: 0;
@@ -21,11 +21,11 @@ background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://
   right: 0;
   left: 0;
   background-size: 105%;
-  background-position-y: -334px;
+  background-position-y: 0px;
   background-position-x: -71px;
 }
 .banner {
-  padding: 100px 0;
+  padding: 180px 0;
   position: relative;
 }
 .banner h1 {
@@ -43,19 +43,19 @@ background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://
 
 .factories_home {
   text-align: left;
-  padding-top: 40px;
+  padding-top: 15px;
   display: flex;
   justify-content: space-evenly;
 }
 .second_factories_home {
   text-align: left;
-  padding-top: 70px;
+  padding-top: 45px;
   display: flex;
   justify-content: space-evenly;
 }
 h4{
   text-align: left;
-  padding-top: 50px;
+  padding-top: 30px;
   margin-left: 55px;
 }
 .container3 {
@@ -63,13 +63,15 @@ h4{
   padding-bottom: 30px;
 }
 #input {
-  border-radius: 80px;
+  border-radius: 10px;
   position: relative;
+  border-block-start-style: none;
+  border-block-end-style: none;
+  border-inline: none;
 }
 .card{
   width: 300px;
   height: 250px;
-  background: url("https://images.xceed.me/bars/gallery/olgod-craft-beer-bar-bar-barcelona-xceed-9e34-46e3.png");
   background-size: cover;
   border-radius: 15px;
 }
