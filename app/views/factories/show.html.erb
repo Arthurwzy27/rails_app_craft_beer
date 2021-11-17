@@ -1,8 +1,8 @@
-<div class="previous-button">
-  <%= link_to '←', factories_path %>
-</div>
 
 <div class="factory-show-layout">
+  <div class="previous-button">
+    <%= link_to '←', factories_path %>
+  </div>
   <br>
   <h2><%= @factory.name %></h2>
   <br>
@@ -23,13 +23,7 @@
 
   <br>
   <h2><%= @factory.description %></h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Donec gravida tincidunt euismod. Mauris lacus mi, vulputate eget sem
-  vitae, imperdiet consectetur urna. In ante sapien, mattis eu nisi ut,
-  malesuada fringilla massa. Ut pulvinar, quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Donec gravida tincidunt euismod. Mauris lacus mi, vulputate eget sem
-  vitae, imperdiet consectetur urna. In ante sapien, mattis eu nisi ut,
-  malesuada fringilla massa. Ut pulvinar, quam</p>
+  <p>À la Fût is always striving to offer high quality brews and to keep on innovating. We have been amongst the first microbreweries in Québec to use cans, to brew beer aged in oak barrels, to develop sour beers with Brettanomyces yeast, to offer beer aged in oak barrels in cans, and to create collaborative brews with other microbreweries in Québec, Ontario and soon the United States.À la Fût stands out on the Québec brewing landscape with its specialty beers. As such, we have won over 30 distinctive awards since 2010 in London, the United States and Canada. The Rouge de Mékinac alone has won 13 awards including the “2012 Beer of the Year in Canada” and the world’s best Kriek-style beer in 2014 and 2015. Our 400 barrel cellar is now one of the largest in Québec. The brewery will soon house a tasting room; but in the meantime, it offers guided tours of the brewery during the summer as part of the Western Kapibouska Village, or overbooking for groups.</p>
   <p><%= @factory.location %></p>
   <br>
   <h2>Which kind of beer do we offer ?</h2>
