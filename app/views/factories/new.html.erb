@@ -1,1 +1,17 @@
-<h1>This is the create factory page</h1>
+<div class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md-6 offset-lg-3">
+      <div class="bg-white rounded p-3 shadow">
+        <h3>Add a new factory 🍻</h3>
+        <%= simple_form_for (@factory) do |f| %>
+          <%= f.input :name, placeholder: 'Enter the name of your factory' %>
+          <%= f.input :location, placeholder: 'Where is located your factory?' %>
+          <%= f.input :description, prompt: 'Tell us more about your Craft beer factory', input_html: { class: 'select2' } %>
+          <%= f.input :price_per_day, placeholder: 'What is the price per person?' %>
+          <%= f.input :capacity, placeholder: 'What is the maximum capacity?' %>
+          <%= f.submit class: 'btn btn-flat' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
