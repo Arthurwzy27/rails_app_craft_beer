@@ -16,10 +16,19 @@ class FactoriesController < ApplicationController
 
   def create
     @factory = Factory.new(factory_params)
+    @factory.user = current_user
     if @factory.save
       redirect_to factory_path(@factory)
     else
       render :new
+    end
+    authorize @factory
+  end
+
+  def destroy
+    @factory = Factory.find(params[:id])
+    if @factory.destroy
+      redirect_to factories_path
     end
     authorize @factory
   end
