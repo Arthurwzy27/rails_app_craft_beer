@@ -1,40 +1,35 @@
 .footer {
-  background-color: rgb(255, 255, 255);
+  background: #F4F4F4;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 100px;
-  padding: 40px;
-  padding-bottom: 5px;
+  padding: 0px 50px;
   color: rgba(0,0,0,0.3);
 }
 .footer-links {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding-right: 45px;
 }
 .footer-links a {
   color: black;
+  opacity: 0.75;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 30px;
   padding: 0px 10px;
 }
-#instagram {
-  color: rgb(152, 58, 165);
+.footer-links a:hover {
+  opacity: 1;
 }
-#youtube {
-  color: rgb(201, 15, 15);
-}
-#facebook {
-  color: rgb(41, 65, 168);
-}
-#twitter {
-  color: rgb(15, 127, 201);
+.footer .fa-heart {
+  color: #D23333;
 }
 
-// .nav-link{
-// justify-content: flex-start;
-// padding-left: 25px;
-// padding-top: 10px;
-// flex-direction: row;
-// }
+.footer-copyright {
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+}
+
+.second_factories_home {
+  margin-bottom: 40px;
+}

@@ -1,6 +1,6 @@
+
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -12,5 +12,28 @@
 }
 
 .navbar-text {
-  padding-right: 50px;
+  padding-right: 70px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.nav-item dropdown {
+  margin-left: 10px;
+}
+
+.dropdown-item {
+  padding: 20px;
+  font-size: 19px;
+}
+
+.avatar dropdown-toggle {
+  margin-left: 30px;
+}
+
+.nav-item {
+display:flex;
+align-items: center;
+margin-left: 20px;
+margin-right: 20px;
 }
