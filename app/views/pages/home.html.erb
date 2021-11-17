@@ -18,22 +18,23 @@
 
     <h4>TOP FACTORIES:</h4>
 
-    <% image_urls = ["https://images.xceed.me/bars/gallery/olgod-craft-beer-bar-bar-barcelona-xceed-9e34-46e3.png", "https://www.65ymas.com/uploads/s1/51/46/9/uno-de-los-lugares-donde-encontrar-mejor-cerveza-artesanal-en-barcelona-beer-linale.jpeg", "https://media-cdn.tripadvisor.com/media/photo-s/12/d0/9c/ce/craft-beers.jpg", "https://www.beerwulf.com/siteassets/editorials/craft-beer-bars-in-europa/biercab_craft-beer-bar.jpg",
+    <% image_urls = ["https://images.xceed.me/bars/gallery/olgod-craft-beer-bar-bar-barcelona-xceed-9e34-46e3.png", "https://maps.googleapis.com/maps/api/place/js/PhotoService.GetPhoto?1sAap_uEB_aX9VEIws3FJE637oTVbYEW-EUG8_Cp-MD2YrKhm6Xt1iP_ktHJvFiQDilwZirNrz3LNFJVYFo9248RTK_IKDOD0CReOsVoHYUU_RLRfHzJRzVKoCsfjgNiGzBeP6EO4cf9E9IXUWMD43l_rwuh_hLhC_xTQQcT3QXY_QYyYsK9pN&4u16383&5m1&2e1&callback=none&client=google-maps-pro&token=50148", "https://media-cdn.tripadvisor.com/media/photo-s/12/d0/9c/ce/craft-beers.jpg", "https://www.beerwulf.com/siteassets/editorials/craft-beer-bars-in-europa/biercab_craft-beer-bar.jpg",
     "https://media-cdn.tripadvisor.com/media/photo-s/0c/53/6c/a6/nuestro-bar-our-taproom.jpg", "https://pbs.twimg.com/media/C-6keTQXsAABfth.jpg", "https://www.thehopleaves.com/uploads/7/3/3/6/73368263/naparbcn-entry-1-of-1_orig.jpg", "https://www.datocms-assets.com/15377/1572352603-london.png?auto=compress&fm=jpg"] %>
 
+    <% text = ['Ølgod', 'Barna Brew', 'CocoVail', 'BierCab', 'Garage Beer', 'Abirradero', 'NaparBCN', 'Mikkeller Bar'] %>
 
     <div class="factories_home">
-    <%= render 'shared/card', url: image_urls[0] %>
-    <%= render 'shared/card', url: image_urls[1] %>
-    <%= render 'shared/card', url: image_urls[2] %>
-    <%= render 'shared/card', url: image_urls[3] %>
+    <%= render 'shared/card', url: image_urls[0], description: text[0] %>
+    <%= render 'shared/card', url: image_urls[1], description: text[1] %>
+    <%= render 'shared/card', url: image_urls[2], description: text[2] %>
+    <%= render 'shared/card', url: image_urls[3], description: text[3] %>
     </div>
 
     <div class="second_factories_home">
-    <%= render 'shared/card', url: image_urls[4] %>
-    <%= render 'shared/card', url: image_urls[5] %>
-    <%= render 'shared/card', url: image_urls[6] %>
-    <%= render 'shared/card', url: image_urls[7] %>
+    <%= render 'shared/card', url: image_urls[4], description: text[4] %>
+    <%= render 'shared/card', url: image_urls[5], description: text[5] %>
+    <%= render 'shared/card', url: image_urls[6], description: text[6] %>
+    <%= render 'shared/card', url: image_urls[7], description: text[7] %>
     </div>
   </body>
 
