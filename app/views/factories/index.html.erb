@@ -2,6 +2,8 @@
 <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.gea.com/fr/binaries/gea-craft-brewing-plug-and-win_tcm29-50426.jpg)">
   Discover our Craft Beer Factories
 </div>
+<%= cl_image_tag("ahtjdr0fwxzr0apuzv98",
+      width: 400, height: 300, crop: :fill) %>
 <div class="factory-position">
   <div class="left">
     <div class="cards">
@@ -16,3 +18,8 @@
     <img id="map" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/18.7072,38.9963,1.05,0/600x800?access_token=pk.eyJ1IjoiZG1pbG9uIiwiYSI6ImNrdHlpejZ3eTFleGUybnA4N2Rwa2J2a24ifQ.O8GDpHfLESId83b0vaJCAA">
   </div>
 </div>
+
+
+<!-- for face detection -->
+<%= cl_image_tag("IMAGE_WITH_FACE_ID",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>
