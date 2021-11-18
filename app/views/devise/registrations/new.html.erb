@@ -16,10 +16,11 @@
                 required: true,
                 input_html: { autocomplete: "new-password" } %>
   </div>
-
+<%= class=form-control string email optional style="width: 60%"%>
   <div class="form-actions">
     <%= f.button :submit, "Sign up" %>
   </div>
 <% end %>
-
+<div class="add-ons">
 <%= render "devise/shared/links" %>
+</div>
