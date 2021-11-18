@@ -1,17 +1,76 @@
 .factory-show-layout {
   padding: 20px;
-  background-color: #F4F4F4;
-  color: black;
+  background-color: #202124;
+  color: white;
   font-family: 'Arial';
   line-height: 25px;
   text-align: justify;
 
   img {
-    height: 600px;
+    height: 700px;
+    border-radius: 50px;
+  }
+}
+.factory-description {
+  display: flex;
+  width: 100vw;
+  margin: 0 !important;
+  padding: 10px;
+
+  .left {
+    width: 60%;
+    padding: 20px;
+  }
+
+  .right {
+    width: 40%;
+    padding: 20px;
   }
 }
 
+// .col {
+// background-color: blue;
+// }
+
+
 .price-guest-layout {
   text-align: right;
-  padding: 300px 0 50px 0;
+  display: grid;
+  justify-content: space-between;
+}
+
+.booking-layout {
+  border: 1px solid #eb5252;
+  border-radius: 12px;
+  padding: 24px;
+  justify-content: space-between;
+  width: 400px;
+  margin-left: 120px;
+}
+
+#numberGuest {
+  border: solid 1px grey;
+  border-radius: 15px;
+  margin: 20px;
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  align-items: center;
+}
+
+.container-form {
+  background-color: none;
+}
+
+.number-guest {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-guest {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
 }
