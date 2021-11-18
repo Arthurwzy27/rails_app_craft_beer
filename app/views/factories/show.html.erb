@@ -23,7 +23,8 @@
         <div class="price-guest-layout">
           <h2><%= @factory.price_per_day %> €</h2>
           <h2><%= @factory.capacity %> guests</h2>
-          <h3></h3>
+          <%= render 'shared/calendar-form' %>
+
         </div>
       </div>
     </div>
