@@ -1,6 +1,27 @@
+.factory-description {
+  display: flex;
+  width: 100vw;
+  margin: 0 !important;
+  padding: 10px;
+
+  .left {
+    width: 60%;
+    padding: 20px;
+  }
+
+  .right {
+    width: 40%;
+    padding: 20px;
+  }
+}
+
+// .col {
+// background-color: blue;
+// }
+
 .factory-show-layout {
   padding: 20px;
-  background-color: #d32929;
+  background-color: #ffffff;
   color: black;
   font-family: 'Arial';
   line-height: 25px;
@@ -13,4 +34,12 @@
 
 .price-guest-layout {
   text-align: right;
+}
+
+.booking-layout {
+  border: 1px solid #e61010;
+  border-radius: 12px;
+  padding: 24px;
+  justify-content: space-between;
+  // box-shadow: 0px 6px 16px rgb(0 0 0 / 12%);
 }
