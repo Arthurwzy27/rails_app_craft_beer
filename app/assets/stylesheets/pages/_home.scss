@@ -1,19 +1,25 @@
 // Specific CSS for your home-page
+$color1 : rgba(255, 205, 5, 0.822);
+$color2 : rgb(25, 27, 38);
+
 body {
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  // background-color: rgba(0, 0, 0, 0.623);
+  background-image: url(https://wallpapers-hub.art/wallpaper-images/96050.jpg);
   font-family: 'Oswald', sans-serif;
-  font-size: 15px;
-  line-height: 35px
+  font-size: 25px;
+  line-height: 35px;
+  background-size: 1300px;
+  background-position-y: -60px;
+  background-position-x: 367px;
 }
 .company_name {
   text-align: center;
   padding-top: 5px;
 }
 
-.banner::before{
-background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.wallpaperup.com/uploads/wallpapers/2017/11/18/1156498/2c77ba36821e3d62cb83cc6826af37bc-700.jpg);
-  // opacity: 100%;
+.banner::before {
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.wallpaperup.com/uploads/wallpapers/2017/11/18/1156498/2c77ba36821e3d62cb83cc6826af37bc-700.jpg);
   content: "";
   position: absolute;
   top: 0;
@@ -22,15 +28,17 @@ background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://
   left: 0;
   background-size: 105%;
   background-position-y: 0px;
-  background-position-x: -71px;
+  background-position-x: -72px;
+  border-bottom: rgb(25, 27, 38);
 }
 .banner {
-  padding: 180px 0;
+  padding: 191px 0;
   position: relative;
 }
 .banner h1 {
   margin: 5px;
-  color: rgb(255, 255, 255);
+  color: rgb(25, 27, 38);
+  text-shadow: 0px 0px 6px rgb(255, 203, 5);
   font-size: 80px;
   font-weight: bold;
   position: relative;
@@ -55,8 +63,11 @@ background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://
 }
 h4{
   text-align: left;
+  font-size: 49px;
   padding-top: 30px;
   margin-left: 55px;
+  color: rgb(25, 27, 38);
+  text-shadow: 0px 0px 6px rgb(255, 203, 5);
 }
 .container3 {
   text-align: left;
@@ -69,16 +80,62 @@ h4{
   border-block-end-style: none;
   border-inline: none;
 }
+
 .card{
   width: 300px;
   height: 250px;
   background-size: cover;
   border-radius: 15px;
+  background-color: rgb(25, 27, 38);
   .image{
-    height: 90%;
+    height: 85%;
+    border-radius: 15px;
+    border-color: rgb(25, 27, 38);
   }
-  .text{
-    height: 10%;
-    background-color: white;
+  .text_outside{
+    height: 15%;
+    background-color: rgb(25, 27, 38);
+    border-radius: 15px;
+    padding-left: 15px;
+  }
+}
+
+.text_inside:after {
+  content: 'Some info about the product and features, the history of the company lorem ipsum and so on.';
+}
+
+.card .image {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition-duration: 0.5s;
+  z-index:0;
+  //transition: z-index 1s 1s;
+  &:hover {
+    z-index:10;
+    -webkit-box-shadow: inset 0px 0px 101px 100px $color1;
+    -moz-box-shadow: inset 0px 0px 101px 100px $color1;
+    box-shadow: inset 0px 0px 101px 100px $color1;
+    .text_inside {
+      opacity:1;
+      transition-delay: 0.4s;
+    }
+  }
+  .text_inside {
+    color: rgb(25, 27, 38);
+    opacity:0;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    padding: 10px;
+  }
+  &1:hover {
+    -webkit-box-shadow: 0px 0px 201px 56px $color1;
+    -moz-box-shadow: 0px 0px 201px 56px $color1;
+    box-shadow: 0px 0px 201px 56px $color1;
+  }
+  &2:hover {
+    -webkit-box-shadow: inset 0px 0px 101px 100px $color1, 0px 0px 201px 56px $color1;
+    box-shadow: inset 0px 0px 101px 100px $color1, 0px 0px 201px 56px $color1;
   }
 }
