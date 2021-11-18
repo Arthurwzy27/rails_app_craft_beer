@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2021_11_16_135152) do
 
   create_table "factories", force: :cascade do |t|
     t.string "name"
-    t.text "desription"
+    t.text "description"
     t.string "location"
     t.integer "price_per_day"
     t.integer "capacity"
