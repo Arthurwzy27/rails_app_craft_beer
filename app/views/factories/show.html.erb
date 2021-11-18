@@ -2,9 +2,6 @@
   <div class="previous-button">
     <%= link_to '←', factories_path %>
   </div>
-  <br>
-  <h2><%= @factory.name %></h2>
-  <br>
   <div class="row">
     <div class="col">
       <%= render 'shared/carrousel' %>
@@ -12,6 +9,7 @@
   </div>
   <br>
 
+  <h2 style="font-size: 60px; text-align: center"><%= @factory.name %></h2>
   <div class="factory-description">
     <div class="left">
       <div class="col">
@@ -46,7 +44,7 @@
   <%= render 'beers/beer-card' %>
 
   <br>
-  <h2>Where can you find us?</h2>
+  <h2 style="padding-left: 25px">Where can you find us?</h2>
   <br>
   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://miro.medium.com/max/1200/1*qYUvh-EtES8dtgKiBRiLsA.png)">
   </div>
