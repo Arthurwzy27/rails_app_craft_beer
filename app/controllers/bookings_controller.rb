@@ -2,15 +2,12 @@ class BookingsController < ApplicationController
 
   def new
     @booking = Booking.new
-    @location = Location.find(params[:location_id])
     authorize @booking
-    authorize @location
   end
 
   def create
     @booking = Booking.new(booking_params)
     @booking.user = current_user
-    @booking.location = Location.find(params[:location_id])
     authorize @booking
     if @booking.save
       redirect_to booking_path(@booking)

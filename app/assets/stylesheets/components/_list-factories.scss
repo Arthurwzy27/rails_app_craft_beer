@@ -6,6 +6,7 @@
     background-color: #202124;
   }
   .right {
+    padding-top: 16px;
     width: 35%;
     background-color: #202124;
   }
@@ -33,6 +34,7 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   padding: 40px;
   text-align: center;
+
 }
 
 .cards {
@@ -41,6 +43,15 @@
   grid-gap: 16px;
   padding: 30px;
   border-radius: 15px;
+
+  a {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  a:hover {
+    text-decoration: none;
+    transform: translate(1px, -2px);
+  }
 }
 
 // Smallest device
