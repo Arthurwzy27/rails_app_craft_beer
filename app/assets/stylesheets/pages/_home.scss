@@ -162,3 +162,13 @@ text-align: center;
     box-shadow: inset 0px 0px 101px 100px $color1, 0px 0px 201px 56px $color1;
   }
 }
+
+a  {
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+}
