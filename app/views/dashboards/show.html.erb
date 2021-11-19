@@ -4,7 +4,7 @@
 <div class="card-grid">
 <% @bookings.each do |booking| %>
 <div class="booking-card">
-<h5><%= booking.location.name %></h5>
+<h5><%= booking.name %></h5>
 <p>Start Date: <%= booking.start_date %></p>
 <p>End Date: <%= booking.end_date %></p>
 <p>Total days: <%= (booking.end_date - booking.start_date).to_i %></p>

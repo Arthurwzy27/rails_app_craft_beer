@@ -11,7 +11,9 @@
       <h1>Beer Origins</h1>
       <p>Discover all new Craft Beer factories around you</p>
         <div class="search-space">
-          <input id="input" type="search" autocomplete="off" spellcheck="false" role="combobox" aria-live="polite" placeholder="I'm searching for..." style="padding:10px 20px">
+          <%= form_tag factories_path, method: :get do %>
+            <input id="input" type="search" autocomplete="on" spellcheck="false" role="combobox" aria-live="polite" placeholder="I'm searching for..." style="padding:10px 20px">
+          <% end %>
         </div>
       </div>
     </div>
