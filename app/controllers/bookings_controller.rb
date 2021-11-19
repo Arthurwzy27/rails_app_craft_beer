@@ -9,10 +9,7 @@ class BookingsController < ApplicationController
     @booking = Booking.new(booking_params)
     @factory = Factory.find(params[:factory_id])
     @booking.user = current_user
-<<<<<<< HEAD
     @booking.factory = @factory
-=======
->>>>>>> 1890ffdecc565b5bcadb878340e8cb6878eb13e4
     authorize @booking
     if @booking.save
       redirect_to factory_booking_path(@factory, @booking)
