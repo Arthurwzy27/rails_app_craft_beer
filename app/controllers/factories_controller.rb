@@ -42,6 +42,6 @@ class FactoriesController < ApplicationController
   private
 
   def factory_params
-    params.require(:factory).permit(:name, :description, :location, :price_per_day, :capacity, :user_id)
+    params.require(:factory).permit(:name, :description, :location, :price_per_day, :capacity, :user_id, :body, :photo)
   end
 end

@@ -24,3 +24,8 @@
      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
     </div>
 </div>
+
+
+<!-- for face detection -->
+<%= cl_image_tag("IMAGE_WITH_FACE_ID",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>
