@@ -19,25 +19,25 @@
 
     <h4>TOP FACTORIES</h4>
 
-    <% image_urls = ["https://images.xceed.me/bars/gallery/olgod-craft-beer-bar-bar-barcelona-xceed-9e34-46e3.png", "https://maps.googleapis.com/maps/api/place/js/PhotoService.GetPhoto?1sAap_uEB_aX9VEIws3FJE637oTVbYEW-EUG8_Cp-MD2YrKhm6Xt1iP_ktHJvFiQDilwZirNrz3LNFJVYFo9248RTK_IKDOD0CReOsVoHYUU_RLRfHzJRzVKoCsfjgNiGzBeP6EO4cf9E9IXUWMD43l_rwuh_hLhC_xTQQcT3QXY_QYyYsK9pN&4u16383&5m1&2e1&callback=none&client=google-maps-pro&token=50148", "https://media-cdn.tripadvisor.com/media/photo-s/12/d0/9c/ce/craft-beers.jpg", "https://www.beerwulf.com/siteassets/editorials/craft-beer-bars-in-europa/biercab_craft-beer-bar.jpg",
-    "https://media-cdn.tripadvisor.com/media/photo-s/0c/53/6c/a6/nuestro-bar-our-taproom.jpg", "https://pbs.twimg.com/media/C-6keTQXsAABfth.jpg", "https://www.thehopleaves.com/uploads/7/3/3/6/73368263/naparbcn-entry-1-of-1_orig.jpg", "https://www.datocms-assets.com/15377/1572352603-london.png?auto=compress&fm=jpg"] %>
+    <% image_urls = ["https://images.the500hiddensecrets.com/2019-04/ghent-drink-my_generator_broke_down.jpg?auto=format&fit=max&h=1080&ixlib=php-1.1.0&q=65&w=1920&s=1ca514bc52daafbf0b7c4c13cd905c22", "https://www.filepicker.io/api/file/2vvCccMTQeO3EUeQsIBa/convert?&w=1540&h=748&fit=crop", "https://uolala.s3.amazonaws.com/event-pictures/b-visita-a-la-antigua-fabrica-de-estrella-damm-81433-450bca.jpg", "https://www.tastytales.tv/uploads/resized/13/pics_breweries_seef_web4.jpeg",
+    "https://media-cdn.tripadvisor.com/media/photo-s/0c/53/6c/a6/nuestro-bar-our-taproom.jpg", "https://pbs.twimg.com/media/C-6keTQXsAABfth.jpg", "https://www.thehopleaves.com/uploads/7/3/3/6/73368263/naparbcn-entry-1-of-1_orig.jpg", "https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2017/08/11/9aeab86ad1d440b4ac6c3e1243ab095e_sawmill-oct16-2109.jpg"] %>
 
-    <% text = ['Ølgod', 'Barna Brew', 'CocoVail', 'BierCab', 'Garage Beer', 'Abirradero', 'NaparBCN', 'Mikkeller Bar'] %>
+    <% text = ['Dok Brewing, 23€/p.', 'Brouwerij Noordt, 15€/p.', 'Fàbrica Estrella Damm, 30€/p.', 'Brouwerijcafé, 21€/p.', 'Garage Beer, 28€/p.', 'Abirradero, 35€/p.', 'NaparBCN, 42€/p.', 'Brouwerij Marieke, 39€/p.'] %>
 
-    <%# <% descriptions = ['fgf', 'dfgd', 'fddgffh', 'tgfds', 'ytrfed', 'fgf', 'dfgd', 'fddgffh'] %>
+    <% descriptions = ["Dok-Noord 4B, 9000 Gent, Belgium", 'Zaagmolenkade 46, 3035 KA Rotterdam, Netherlands', "Carrer del Rosselló, 515, 08025 Barcelona", ' Indiestraat 21, 2000 Antwerpen, Belgium', 'Carrer del Consell de Cent, 261, 08011 Barcelona, Spain', 'Carrer de Vila i Vilà, 77, 08004 Barcelona', 'Carrer de la Diputació, 451, 08013 Barcelona', 'Amsterdam, Noord-Holland, Netherlands'] %>
 
     <div class="factories_home">
-    <%= render 'shared/card', url: image_urls[0], description: text[0] %>
-    <%= render 'shared/card', url: image_urls[1], description: text[1] %>
-    <%= render 'shared/card', url: image_urls[2], description: text[2] %>
-    <%= render 'shared/card', url: image_urls[3], description: text[3] %>
+    <%= render 'shared/card', url: image_urls[0], description: text[0], inside: descriptions[0] %>
+    <%= render 'shared/card', url: image_urls[1], description: text[1], inside: descriptions[1] %>
+    <%= render 'shared/card', url: image_urls[2], description: text[2], inside: descriptions[2] %>
+    <%= render 'shared/card', url: image_urls[3], description: text[3], inside: descriptions[3] %>
     </div>
 
     <div class="second_factories_home">
-    <%= render 'shared/card', url: image_urls[4], description: text[4] %>
-    <%= render 'shared/card', url: image_urls[5], description: text[5] %>
-    <%= render 'shared/card', url: image_urls[6], description: text[6] %>
-    <%= render 'shared/card', url: image_urls[7], description: text[7] %>
+    <%= render 'shared/card', url: image_urls[4], description: text[4], inside: descriptions[4] %>
+    <%= render 'shared/card', url: image_urls[5], description: text[5], inside: descriptions[5] %>
+    <%= render 'shared/card', url: image_urls[6], description: text[6], inside: descriptions[6] %>
+    <%= render 'shared/card', url: image_urls[7], description: text[7], inside: descriptions[7] %>
     </div>
   </body>
 
