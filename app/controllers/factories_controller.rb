@@ -12,6 +12,7 @@ class FactoriesController < ApplicationController
 
   def show
     @factory = Factory.find(params[:id])
+    @booking = Booking.new
     authorize @factory
   end
 
