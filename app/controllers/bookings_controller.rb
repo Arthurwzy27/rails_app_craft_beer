@@ -1,5 +1,4 @@
 class BookingsController < ApplicationController
-  before_action :set_total_price
 
   def new
     @booking = Booking.new
@@ -29,10 +28,6 @@ class BookingsController < ApplicationController
     if @booking.update(status: params[:status])
       redirect_to dashboard_path
     end
-  end
-
-  def set_total_price
-    self.total_price = (self.end_date - self.start_date).to_i * self.factory.price
   end
 
   private
