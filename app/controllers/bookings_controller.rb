@@ -7,10 +7,14 @@ class BookingsController < ApplicationController
 
   def create
     @booking = Booking.new(booking_params)
+    @factory = Factory.find(params[:factory_id])
     @booking.user = current_user
+
+    @booking.factory = @factory
+
     authorize @booking
     if @booking.save
-      redirect_to booking_path(@booking)
+      redirect_to factory_booking_path(@factory, @booking)
     end
   end
 

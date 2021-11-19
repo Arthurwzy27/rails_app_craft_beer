@@ -8,6 +8,6 @@ class Booking < ApplicationRecord
   before_create :set_total_price
 
   def set_total_price
-    self.total_price = (self.end_date - self.start_date).to_i * self.factory.price
+    self.total_price = (self.end_date - self.start_date).to_i * self.factory.price_per_day
   end
 end
