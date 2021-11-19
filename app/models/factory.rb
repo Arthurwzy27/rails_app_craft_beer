@@ -6,6 +6,9 @@ class Factory < ApplicationRecord
     using: {
       tsearch: { prefix: true }
     }
+  geocoded_by :location
+  after_validation :geocode, if: :will_save_change_to_location?
+
   # pg_search_scope :global_search,
   #   against: [ :name, :description ],
   #   associated_against: {
