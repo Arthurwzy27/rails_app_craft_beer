@@ -13,13 +13,3 @@ Factory.create!(
   capacity: 10,
   user_id: User.first.id
 )
-
-Booking.create!(
-  start_date: "2021-10-09",
-  end_date: "2021-10-11",
-  total_price: 49,
-  status: "pending",
-  guests: 3,
-  factory_id: Factory.first.id,
-  user_id: User.first.id
-)
