@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -227,3 +228,16 @@
 </body>
 
 </html>
+
+<div class="confirmation-container">
+<h2>Your request was sent to the location owner!</h2>
+<h5><%= @booking.location.name %></h5>
+<div class="confirmation-details">
+<p>Start Date: <%= @booking.start_date %></p>
+<p>End Date: <%= @booking.end_date %></p>
+<p>Total days: <%= (@booking.end_date - @booking.start_date).to_i %></p>
+<p>Total price: $<%= @booking.agreed_price %></p>
+<p>Booking status: <%= @booking.status %></p>
+</div>
+<%= link_to "Dashboard", dashboard_path, class: "btn-dashboard"  %>
+

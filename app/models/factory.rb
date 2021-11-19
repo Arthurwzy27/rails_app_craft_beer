@@ -1,6 +1,7 @@
 class Factory < ApplicationRecord
   belongs_to :user
   has_many :bookings
+  geocoded_by :location
 
   include PgSearch::Model
   pg_search_scope :search_by_name_and_description,
@@ -8,7 +9,7 @@ class Factory < ApplicationRecord
     using: {
       tsearch: { prefix: true }
     }
-  geocoded_by :location
+
   after_validation :geocode, if: :will_save_change_to_location?
 
   # pg_search_scope :global_search,

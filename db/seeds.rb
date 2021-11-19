@@ -1,25 +1,102 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+User.destroy_all
+
+user_one = User.create!(email: "user@example.com", password: "password")
+
 Factory.create!(
   name: "À la fût",
   description: "Exceptional beers aged in oak barrels",
   location: "Barcelona",
-  price_per_day: 32,
-  capacity: 10,
-  user_id: User.first.id
+  price_per_day: rand(12..59),
+  capacity: rand(7..31),
+  user: user_one
 )
 
-Booking.create!(
-  start_date: "2021-10-09",
-  end_date: "2021-10-11",
-  total_price: 49,
-  status: "pending",
-  guests: 3,
-  factory_id: Factory.first.id,
-  user_id: User.first.id
+Factory.create!(
+  name: "Red Shed Brewing",
+  description: "Exceptional beers aged in oak barrels",
+  location: "Madrid",
+  price_per_day: rand(12..59),
+  capacity: rand(7..31),
+  user: user_one
+)
+
+Factory.create!(
+  name: "À la fût",
+  description: "Exceptional beers aged in oak barrels",
+  location: "Mallorca",
+  price_per_day: rand(12..59),
+  capacity: rand(7..31),
+  user: user_one
+)
+
+Factory.create!(
+  name: "Fifth Frame Brewing",
+  description: "Exceptional beers aged in oak barrels",
+  location: "Andorra",
+  price_per_day: rand(12..59),
+  capacity: rand(7..31),
+  user: user_one
+)
+
+Factory.create!(
+  name: "Andorra Beer Fest",
+  description: "Exceptional beers aged in oak barrels",
+  location: "Burgos",
+  price_per_day: rand(12..59),
+  capacity: rand(7..31),
+  user: user_one
+)
+
+Factory.create!(
+  name: "Brooklyn Brewery",
+  description: "Exceptional beers aged in oak barrels",
+  location: "Madrid",
+  price_per_day: rand(12..59),
+  capacity: rand(7..31),
+  user: user_one
+)
+
+Factory.create!(
+  name: "Bronx Brewery",
+  description: "Exceptional beers aged in oak barrels",
+  location: "Soria",
+  price_per_day: rand(12..59),
+  capacity: rand(7..31),
+  user: user_one
+)
+
+Factory.create!(
+  name: "Five Wits Brewing",
+  description: "Exceptional beers aged in oak barrels",
+  location: "Valencia",
+  price_per_day: rand(12..59),
+  capacity: rand(7..31),
+  user: user_one
+)
+
+Factory.create!(
+  name: "Big River Grille & Brewing",
+  description: "Exceptional beers aged in oak barrels",
+  location: "Granada",
+  price_per_day: rand(12..59),
+  capacity: rand(7..31),
+  user: user_one
+)
+
+Factory.create!(
+  name: "Big Frog Brewing Company",
+  description: "Exceptional beers aged in oak barrels",
+  location: "Pamplona",
+  price_per_day: rand(12..59),
+  capacity: rand(7..31),
+  user: user_one
+)
+
+Factory.create!(
+  name: "À la fût",
+  description: "Exceptional beers aged in oak barrels",
+  location: "Oviedo",
+  price_per_day: rand(12..59),
+  capacity: rand(7..31),
+  user: user_one
 )
