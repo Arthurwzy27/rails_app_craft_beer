@@ -26,6 +26,8 @@
 
     <% descriptions = ["Dok-Noord 4B, 9000 Gent, Belgium", 'Zaagmolenkade 46, 3035 KA Rotterdam, Netherlands', "Carrer del Rosselló, 515, 08025 Barcelona", ' Indiestraat 21, 2000 Antwerpen, Belgium', 'Carrer del Consell de Cent, 261, 08011 Barcelona, Spain', 'Carrer de Vila i Vilà, 77, 08004 Barcelona', 'Carrer de la Diputació, 451, 08013 Barcelona', 'Amsterdam, Noord-Holland, Netherlands'] %>
 
+    <%= link_to factories_path do %>
+
     <div class="factories_home">
     <%= render 'shared/card', url: image_urls[0], description: text[0], inside: descriptions[0] %>
     <%= render 'shared/card', url: image_urls[1], description: text[1], inside: descriptions[1] %>
@@ -39,6 +41,7 @@
     <%= render 'shared/card', url: image_urls[6], description: text[6], inside: descriptions[6] %>
     <%= render 'shared/card', url: image_urls[7], description: text[7], inside: descriptions[7] %>
     </div>
+    <% end %>
   </body>
 
 </html>
