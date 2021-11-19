@@ -2,6 +2,12 @@ class FactoriesController < ApplicationController
   def index
     @factories = policy_scope(Factory).order(created_at: :desc)
     authorize @factories
+    @markers = @factories.geocoded.map do |factory|
+      {
+        lat: factory.latitude,
+        lng: factory.longitude
+      }
+    end
   end
 
   def show
@@ -36,6 +42,6 @@ class FactoriesController < ApplicationController
   private
 
   def factory_params
-    params.require(:factory).permit(:name, :description, :location, :price_per_day, :capacity, :user_id)
+    params.require(:factory).permit(:name, :description, :location, :price_per_day, :capacity, :user_id, :body, :photo)
   end
 end
