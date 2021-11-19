@@ -2,6 +2,12 @@ class FactoriesController < ApplicationController
   def index
     @factories = policy_scope(Factory).order(created_at: :desc)
     authorize @factories
+    @markers = @factories.geocoded.map do |factory|
+      {
+        lat: factory.latitude,
+        lng: factory.longitude
+      }
+    end
   end
 
   def show
